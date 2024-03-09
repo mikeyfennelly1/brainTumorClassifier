@@ -1,0 +1,8 @@
+:toc:
+:toclevels: 4
+
+= Brain Tumor Classifier
+
+== What is this project about?
+
+This project is a machine learning model that can classify brain tumors from MRI scans. It is a deep neural network that I built in Python with Tensorflow and Keras.
