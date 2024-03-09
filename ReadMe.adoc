@@ -8,4 +8,4 @@
 
 == What is this project about?
 
-This project is a machine learning model that can classify brain tumors from MRI scans. This project uses a convolutional neural network that I built in Python with {Tensorflow}[Tensorflow] and {Keras}[Keras]. I trained this model with data from {KaggleDataset}[this dataset].
+This project is a machine learning model that can detect brain tumors from MRI scans. This project uses a convolutional neural network that I built in Python with {Tensorflow}[Tensorflow] and {Keras}[Keras]. I trained this model with data from {KaggleDataset}[this dataset].
