@@ -1,9 +1,11 @@
 :toc:
 :toclevels: 4
+:Tensorflow: https://www.tensorflow.org/
+:Keras: https://keras.io/
 :KaggleDataset: https://www.kaggle.com/datasets/jakeshbohaju/brain-tumor
 
 = Brain Tumor Classifier
 
 == What is this project about?
 
-This project is a machine learning model that can classify brain tumors from MRI scans. It is a deep neural network that I built in Python with Tensorflow and Keras. I trained this model with data from {KaggleDataset}[this dataset].
+This project is a machine learning model that can classify brain tumors from MRI scans. This project uses a convolutional neural network that I built in Python with {Tensorflow}[Tensorflow] and {Keras}[Keras]. I trained this model with data from {KaggleDataset}[this dataset].
