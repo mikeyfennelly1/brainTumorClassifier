@@ -12,7 +12,7 @@ This project is a machine learning model that can detect brain tumors from MRI s
 
 == The Neural network
 
-image::/assets/images/brainTumorClassifier-diagram1.png[]
+image::/assets/images/brainTumorClassifier-diagram2.png[]
 
 The above photo is a diagram of the neural network that I used to create this project. It consists of 3 convolutional layers, which work to extract features such as vertical lines, edges, corners and simple patterns. Each convolutional layer has a corresponding pooling layer which uses the MaxPool() pooling function. This works to reduce the size of the data that each neural network layer is working with further down in the network, while also maintaining the information that matters.
 
