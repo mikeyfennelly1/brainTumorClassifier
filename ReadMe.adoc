@@ -3,10 +3,10 @@
 :Tensorflow: https://www.tensorflow.org/
 :Keras: https://keras.io/
 :KaggleDataset: https://www.kaggle.com/datasets/jakeshbohaju/brain-tumor
-:Keras Sequential API: https://www.tensorflow.org/api_docs/python/tf/keras/Sequential
-:Rectified Linear Unit Activation Function: https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6#d8df
-:Sigmoid Activation Function: https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6#9dcb
-:MaxPool Pooling Function: https://medium.com/geekculture/max-pooling-why-use-it-and-its-advantages-5807a0190459
+:KerasSequentialAPI: https://www.tensorflow.org/api_docs/python/tf/keras/Sequential
+:RectifiedLinearUnitActivationFunction: https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6#d8df
+:SigmoidActivationFunction: https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6#9dcb
+:MaxPoolPoolingFunction: https://medium.com/geekculture/max-pooling-why-use-it-and-its-advantages-5807a0190459
 
 = Brain Tumor Classifier
 
@@ -18,9 +18,9 @@ This project is a machine learning model that can detect brain tumors from MRI s
 
 image::/assets/images/brainTumorClassifier-diagram2.png[]
 
-The above photo is a diagram of the neural network that I used to create this project. It consists of 3 convolutional layers, which work to extract features such as vertical lines, edges, corners and simple patterns. Each convolutional layer has a corresponding pooling layer which uses the {MaxPool Pooling Function}[MaxPool() pooling function] and each convolutional node has a non linearity function - in this case {Rectified Linear Unit Activation Function}[ReLU (Rectified Linear Unit)]. This works to reduce the size of the data that each neural network layer is working with further down in the network, while also maintaining the information that matters.
+The above photo is a diagram of the neural network that I used to create this project. It consists of 3 convolutional layers, which work to extract features such as vertical lines, edges, corners and simple patterns. Each convolutional layer has a corresponding pooling layer which uses the {MaxPoolPoolingFunction}[MaxPool() pooling function] and each convolutional node has a non linearity function - in this case {RectifiedLinearUnitActivationFunction}[ReLU (Rectified Linear Unit)]. This works to reduce the size of the data that each neural network layer is working with further down in the network, while also maintaining the information that matters.
 
 === Feature Extraction Component vs Classification Component
-As you can see from the diagram above the network has two main components, the feature extraction component and the classification/classifier component. The point of the feature extraction component is to extract features such as edges and patterns and (through backpropagation and gradient descent) manipulate the weights between nodes and kernel coefficients to optimize itself based on the success of it's predictions. The output of the feature extraction component consists of the features that are important and excludes what isn't important. The classification component then works with the data provided from the feature extraction component to make predictions with 2 fully connected/dense layers, one having 256 nodes and the other having just one node. The final node/prediction node has a {Sigmoid Activation Function}[sigmoid activation function] that provides a probability between 0 and 1 that can be leveraged to determain if the scan consists of a tumor or not. Any values less than 0.5 are declared 0 (no tumor present in scan), and any value between 0.5 and 1 are declared 1 (tumor present in scan).
+As you can see from the diagram above the network has two main components, the feature extraction component and the classification/classifier component. The point of the feature extraction component is to extract features such as edges and patterns and (through backpropagation and gradient descent) manipulate the weights between nodes and kernel coefficients to optimize itself based on the success of it's predictions. The output of the feature extraction component consists of the features that are important and excludes what isn't important. The classification component then works with the data provided from the feature extraction component to make predictions with 2 fully connected/dense layers, one having 256 nodes and the other having just one node. The final node/prediction node has a {SigmoidActivationFunction}[sigmoid activation function] that provides a probability between 0 and 1 that can be leveraged to determain if the scan consists of a tumor or not. Any values less than 0.5 are declared 0 (no tumor present in scan), and any value between 0.5 and 1 are declared 1 (tumor present in scan).
 
-To build the neural network I used the {Keras Sequential API}[Keras Sequential API] which is an out of the box API that helps to build feedforward neural networks.
+To build the neural network I used the {KerasSequentialAPI}[Keras Sequential API] which is an out of the box API that helps to build feedforward neural networks.
