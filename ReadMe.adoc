@@ -10,7 +10,7 @@
 
 = Brain Tumor Classifier
 
-image::/assets/images/youtube_thumbnail.png[thumbnail, link=https://youtu.be/xvX29_NZPAQ]
+image::/assets/images/youtube_thumbnail.png[thumbnail,link=https://youtu.be/xvX29_NZPAQ]
 
 == What is this project about?
 
